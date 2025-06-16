@@ -1,0 +1,72 @@
+{
+  "playbook": {
+    "playbook": {
+      "displayName": "Default Generative Playbook",
+      "goal": "Answer user's questions using the most relevant information from FAQs",
+      "steps": [ {
+        "text": "Answer only questions that we have data for"
+      }, {
+        "text": "Reply with 'I don't know' when there is any unrelated questions"
+      } ],
+      "tools": [ "0d001b62-4763-4d27-a3fa-a07b792a9ab8" ],
+      "etag": "6850095b",
+      "playbookId": "00000000-0000-0000-0000-000000000000",
+      "tokenCount": 41,
+      "ragSettings": {
+      
+      },
+      "playbookType": "WORKFLOW",
+      "codeBlock": {
+      
+      },
+      "speechAdaptationSettings": {
+      
+      }
+    },
+    "tools": [ {
+      "id": "0d001b62-4763-4d27-a3fa-a07b792a9ab8",
+      "displayName": "Aurora Bay",
+      "etag": "685007e0",
+      "dataStoreTool": {
+        "dataStoreConnections": [ {
+          "dataStoreType": "UNSTRUCTURED",
+          "dataStore": "projects/627649263804/locations/global/collections/default_collection/dataStores/aurorabayds_1750070411598",
+          "documentProcessingMode": "DOCUMENTS",
+          "engineType": "CHAT_ENGINE",
+          "connectorConfig": {
+          
+          },
+          "createTime": {
+            "seconds": 1750070416,
+            "nanos": 124375000
+          },
+          "displayName": "AuroraBayDS",
+          "dialogflowAddTime": {
+            "seconds": 1750075360,
+            "nanos": 402000000
+          }
+        } ],
+        "models": {
+          "summarizationModel": {
+          
+          },
+          "rewriterModel": {
+          
+          }
+        },
+        "fallbackPrompt": {
+        
+        },
+        "groundingSettings": {
+        
+        },
+        "payloadSettings": {
+        
+        },
+        "voiceModeSettings": {
+        
+        }
+      }
+    } ]
+  }
+}
